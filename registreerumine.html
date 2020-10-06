@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="matkaklubi.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+        <title>Matkaklubi!</title>
+    </head>
+    <body class="expansion-alids-init"> 
+            <div class="container-fluid pais">
+            <div class="container">
+                <nav class="pl-0 navbar navbar-expand-lg navbar-light bg-transparent"><!--transparent võtab ära taustavärvi-->
+                    <div class="d-flex klubi"> <!--seab paremale äärde koos/div lõpetuseks (mitte lõppus)-->
+                        <a class="navbar-brand" href="#">
+                            <img class="klubilogo" src="./assets/klubilogo.png" alt="" />
+                        </a>
+                        <p class="klubinimi text-uppercase">Puhas Higi</p>
+                    </div> 
+                    <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" 
+                    aria-controls="navbarNavAltMarkup" 
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="klubimenyy collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="index.html"
+                         > Avaleht <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" a href="meist.html">Meist</a>  
+                            <a class="nav-item nav-link" href="#">Hinnad</a>
+                            <a class="nav-item nav-link disabled" href="#">Kontakt</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row flex-column-reverse flex-xl-row">
+                    <div class="col-12 col-xl-6 pt-5">
+                         <div class="col-md-6">
+                                <img src="./assets/photo-1504280390367-361c6d9f38f4.jpg">
+                            </div>
+                            <br>    
+    
+                            <h1>
+                            Avasta koos meiega
+                        </h1>
+                        <div class="sisu">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nihil necessitatibus error voluptatem unde eum. Eaque non 
+                                maiores eos velit porro iste voluptate qui tenetur ab, 
+                                illum doloribus aspernatur sunt adipisci.
+                            </p>
+                            <div class="row" id="sektsioon-matkainfo">
+                                <div class="container">
+                                 <h2>Registreeru</h2>
+                                 <form action="matk-registreerimine.php" method="post">
+                                    <div class="form-group">
+                                      <label for="name">Nimi:</label>
+                                      <input type="text" class="form-control" id="name" placeholder="Sisesta nimi" name="nimi">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email:</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Sisesta email" name="email">
+                                    </div> 
+                                    <div class="form-group">
+                                      <label for="markused">Märkused:</label>
+                                      <textarea class="form-control" id="markused" name="markused" rows="3"></textarea>
+                                    </div>   
+                                    <input type="hidden" id="matkId" name="matkId" value="1"> 
+                                    <button type="submit" class="btn btn-primary">Saada</button>
+                                  </form>
+                            </div>
+                        </div>
+
+
+
+                </div>
+                </div>
+                </body>
